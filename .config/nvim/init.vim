@@ -56,3 +56,5 @@ map <F2> :NERDTreeToggle<CR>
 
 "This maps CtrlP with find files and buffers and MRUto <F4>
 map <F4> :CtrlPMixed <CR>"""
+
+set mouse-=a
