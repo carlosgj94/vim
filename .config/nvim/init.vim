@@ -11,6 +11,8 @@ let mapleader=","
 "Map the esc to jj
 imap jj <ESC> 
 
+set shell=/bin/bash
+
 """""""""Indentacion""""""""""""""""""
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -39,7 +41,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'jceb/vim-orgmode'
 " Python mode
-Plug 'klen/python-mode'
+" Plug 'klen/python-mode'
 call plug#end()
 
 
@@ -63,3 +65,6 @@ set mouse-=a
 
 " Automatically fix PEP8 errors in the current buffer:
 noremap <F8> :PymodeLintAuto<CR>
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
