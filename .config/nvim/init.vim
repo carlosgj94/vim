@@ -22,7 +22,7 @@ set expandtab
 """"""""End Indentacion""""""""""""""
 
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 "Numbers to move easily
 Plug 'myusuf3/numbers.vim'
 "Goyo, to make it beautiful
@@ -38,6 +38,8 @@ Plug 'itchyny/lightline.vim'
 "Startify, make the start screen fancier
 Plug 'mhinz/vim-startify'
 Plug 'jceb/vim-orgmode'
+" Python mode
+Plug 'klen/python-mode'
 call plug#end()
 
 
@@ -58,3 +60,6 @@ map <F2> :NERDTreeToggle<CR>
 map <F4> :CtrlPMixed <CR>"""
 
 set mouse-=a
+
+" Automatically fix PEP8 errors in the current buffer:
+noremap <F8> :PymodeLintAuto<CR>
