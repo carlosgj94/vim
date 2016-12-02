@@ -42,6 +42,10 @@ Plug 'mhinz/vim-startify'
 Plug 'jceb/vim-orgmode'
 " Python mode
 " Plug 'klen/python-mode'
+" To use git inside vim
+Plug 'tpope/vim-fugitive'
+" To see that fancy bar next to the numbers with the staging area
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 
