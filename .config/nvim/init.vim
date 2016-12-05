@@ -25,6 +25,8 @@ set expandtab
 
 
 call plug#begin('~/.config/nvim/plugged')
+" Dracula theme for vim
+Plug 'dracula/vim'
 "Numbers to move easily
 Plug 'myusuf3/numbers.vim'
 "Goyo, to make it beautiful
@@ -46,6 +48,8 @@ Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-fugitive'
 " To see that fancy bar next to the numbers with the staging area
 Plug 'airblade/vim-gitgutter'
+" Adds a line with the buffers
+Plug 'bling/vim-bufferline'
 call plug#end()
 
 
@@ -72,3 +76,5 @@ noremap <F8> :PymodeLintAuto<CR>
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+color dracula
