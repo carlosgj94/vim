@@ -42,6 +42,7 @@ Plug 'mhinz/vim-startify'
 Plug 'jceb/vim-orgmode'
 " Python mode
 " Plug 'klen/python-mode'
+Plug 'bling/vim-bufferline'
 call plug#end()
 
 
