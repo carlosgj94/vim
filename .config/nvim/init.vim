@@ -43,7 +43,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'jceb/vim-orgmode'
 " Python mode
-" Plug 'klen/python-mode'
+Plug 'klen/python-mode'
 " To use git inside vim
 Plug 'tpope/vim-fugitive'
 " To see that fancy bar next to the numbers with the staging area
@@ -74,7 +74,6 @@ set mouse-=a
 " Automatically fix PEP8 errors in the current buffer:
 noremap <F8> :PymodeLintAuto<CR>
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
 color dracula
+
+tnoremap <ESC> <C-\><C-n>:bn<ENTER>
